@@ -1,0 +1,104 @@
+.typography {
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 16px;
+  margin: 0;
+}
+
+.h1 {
+  font-size: 54px;
+  font-weight: 300;
+  line-height: 64px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: var(--font-color-text-primary);
+}
+
+.h2 {
+  font-size: 34px;
+  font-weight: 300;
+  line-height: 40px;
+  letter-spacing: 0em;
+  color: var(--font-color-text-primary);
+}
+
+
+.h4 {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.75rem;
+  letter-spacing: 0.063rem;
+  margin: 0;
+}
+
+.h5 {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.75rem;
+  letter-spacing: 0.063rem;
+  margin: 0;
+}
+
+.label {
+  font-weight: 400;
+  line-height: 1.188rem;
+  letter-spacing: 0;
+  color: var(--font-color-text-secondary);
+}
+
+.paragraph {
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 32px;
+  letter-spacing: 0.9169999957084656px;
+  color: var(--font-color-text-secondary);
+}
+
+.body {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0.5px;
+  color: #757575;
+}
+
+@media only screen and (max-width: 768px) {
+  .typography {
+    font-size: 12px;
+  }
+
+  .h1 {
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: 0em;
+  }
+
+  .h2 {
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: 0em;
+  }
+
+  .h4 {
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 1px;
+  }
+
+  .h5 {
+    font-size: 15px;
+    line-height: 28px;
+    letter-spacing: 1px;
+  }
+
+  .label {
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0em;
+  }
+
+  .paragraph {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.9169999957084656px;
+  }
+}
