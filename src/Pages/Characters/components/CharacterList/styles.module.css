@@ -13,33 +13,6 @@
   gap: 1.5rem;
 }
 
-.article {
-  width: 27.031rem;
-  height: 29.875rem;
-}
-
-.containerPeople {
-  width: 27.031rem;
-  height: 478px;
-}
-
-.characterPhoto {
-  width: 27.031rem;
-  height: 14.375rem;
-}
-
-.characterName {
-  margin: 0.5rem 0;
-}
-
-.characterHomeworld {
-  margin: 0.5rem 0;
-}
-
-.characterInfo {
-  margin: 0.5rem 0;
-}
-
 .loadMoreContainer {
   text-align: center;
   width: 100%;
@@ -75,27 +48,6 @@
     width: 16.6rem;
     height: 4rem;
     padding: 1px 55.41px;
-  }
-
-  .article {
-    width: 28.333rem;
-    height: 12.167rem;
-  }
-
-  .containerPeople {
-    width: 27.031rem;
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
-  }
-
-  .characterInfo {
-    display: none;
-  }
-
-  .characterPhoto {
-    width: 115px;
-    height: 130px;
   }
 
   .loadMoreButtonText {
