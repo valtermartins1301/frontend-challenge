@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Start Wars app",
+  "name": "Start Wars character list app",
   "icons": [
     {
       "src": "favicon.ico",
