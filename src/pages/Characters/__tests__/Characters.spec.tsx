@@ -1,5 +1,5 @@
 import React from 'react';
-import { screen, render } from '@testing-library/react';
+import { screen, render, fireEvent } from '@testing-library/react';
 import Characters from '../Characters';
 import useSWR from 'swr';
 
@@ -28,6 +28,24 @@ const mockPeopleApiResponse = {
       gender: 'female',
     },
   ],
+};
+
+const mockPlanetApiResponse = {
+  results: [
+    {
+      name: 'Tatooine',
+      residents: ['"https://swapi.dev/api/people/2/"'],
+    },
+  ],
+};
+
+const mockFilterApiResult = {
+  url: '2',
+  name: 'C-3PO',
+  homeworld: 'Tatooine',
+  height: '172',
+  mass: '77',
+  gender: 'n/a',
 };
 
 describe('Characters component', () => {
@@ -65,5 +83,23 @@ describe('Characters component', () => {
     expect(screen.getByText('All')).toBeInTheDocument();
     expect(screen.getByText('Tatooine')).toBeInTheDocument();
     expect(screen.getByText('Naboo')).toBeInTheDocument();
+  });
+
+  describe('when select a planet in the filter options', () => {
+    it('renders the filtered characters', () => {
+      useSWRMock.mockImplementation((url: string) => {
+        if (url.includes('planets')) return { data: mockPlanetApiResponse };
+        if (url.includes('people/2')) return { data: mockFilterApiResult };
+
+        return { data: mockPeopleApiResponse, isLoading: false };
+      });
+
+      render(<Characters />);
+
+      const selectElement = screen.getByLabelText('Filter By:');
+      fireEvent.change(selectElement, { target: { value: 'Tatooine' } });
+
+      expect(screen.getByText(mockFilterApiResult.name)).toBeInTheDocument();
+    });
   });
 });
