@@ -1,6 +1,6 @@
 import React from 'react';
-import { Typography } from '../../../../Components/Typography/Typography';
-import { Loading } from '../../../../Components/Loading/Loading';
+import { Typography } from '../../../../components/Typography/Typography';
+import { Loading } from '../../../../components/Loading/Loading';
 import { default as S } from './styles.module.css';
 import { People } from '../../../../types/people';
 import { Character } from '../Character/Character';

@@ -8,6 +8,7 @@ SWAPI Character Explorer is a React application that allows users to explore cha
 - [Features](#features)
 - [Specifications](#specifications)
 - [Tech Decisions](#tech-decisions)
+- [Folder Structure](#folder-structure)
 - [Tech Debts](#tech-debts)
 - [Technologies Used](#technologies-used)
 - [Setup](#setup)
@@ -25,15 +26,12 @@ Live demo available [here](https://starwars-character-list.web.app/).
 
 ## Specifications
 
-Essa aplicação foi desenvolvida seguindo o [mock-up](https://www.figma.com/file/5CMAkR0A4OHSS83xjIiShv/CloudWalk-FrontEnd-test?type=design&node-id=0-1&mode=design&t=U1b5U1gejjQ1ClWr-0) e os pré-requisitos estabelecidos [nesse documento](https://gist.github.com/cloudwalk-tests/2d2302ba59c988d09d7f9fe1b9474c8e#24-tech-stack).
+This application was developed following the [mock-up](https://www.figma.com/file/5CMAkR0A4OHSS83xjIiShv/CloudWalk-FrontEnd-test?type=design&node-id=0-1&mode=design&t=U1b5U1gejjQ1ClWr-0) and the established prerequisites in [this document](https://gist.github.com/cloudwalk-tests/2d2302ba59c988d09d7f9fe1b9474c8e#24-tech-stack).
 
-Primeiramente foram identificados os componentes que compõem a página e quais as entidades/dados estão presentes na tela.
-Sendo assim, temos o seguinte protótipo:
-
+First, the components that make up the page and which entities/data are present on the screen were identified. Therefore, we have the following prototype:
 <img src="https://github.com/valtermartins1301/frontend-challenge/assets/10012903/e08e47b4-99d2-4670-a3b1-c0e46240faf4" width="700" />
 
-Definidos os principais componentes, temos o seguinte modelo de dados para as informações apresentadas:
-
+With the main components defined, we have the following data model for the presented information:
 ```js
 export interface People {
   name: string;
@@ -63,6 +61,15 @@ Using relative sizes (rem) so that the elements of the page adapt to the screen 
 
 - Firebase Hosting
 Firebase Hosting offers a quick and easy deployment experience for hosting frontend applications, making it simple to display development results in a production environment.
+
+## Folder Structure
+
+```js
+- api // all files/logics used to use in the API
+- components // primitive components used in the entire app
+- pages // all pages used on the route system
+- types // the app global types
+```
 
 ## Tech Debts
 

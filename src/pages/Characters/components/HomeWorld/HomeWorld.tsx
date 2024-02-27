@@ -1,7 +1,7 @@
 import useSWR from 'swr';
-import { Typography } from '../../../../Components/Typography/Typography';
+import { Typography } from '../../../../components/Typography/Typography';
 import { default as S } from './styles.module.css';
-import { fetcher } from '../../../../API/fetcher';
+import { fetcher } from '../../../../api/fetcher';
 import { Planet } from '../../../../types/planet';
 
 export const HomeWorld = ({ url }: { url: string }) => {

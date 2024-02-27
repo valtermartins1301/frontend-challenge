@@ -1,11 +1,11 @@
 // import useSWR from 'swr';
 import useSWR from 'swr';
 import { useState } from 'react';
-import { Typography } from '../../Components/Typography/Typography';
+import { Typography } from '../../components/Typography/Typography';
 import { default as S } from './styles.module.css';
 import { CharacterList } from './components/CharacterList/CharacterList';
-import { FilterBar } from '../../Components/FilterBar/FilterBar';
-import { fetcher } from '../../API/fetcher';
+import { FilterBar } from '../../components/FilterBar/FilterBar';
+import { fetcher } from '../../api/fetcher';
 import { CharactersByPlanet } from './components/CharactersByPlanet/CharactersByPlanet';
 
 const PLANETS = [

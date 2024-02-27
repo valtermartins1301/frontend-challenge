@@ -1,11 +1,11 @@
 import React from 'react';
 import useSWR from 'swr';
-import { Typography } from '../../../../Components/Typography/Typography';
-import { Loading } from '../../../../Components/Loading/Loading';
+import { Typography } from '../../../../components/Typography/Typography';
+import { Loading } from '../../../../components/Loading/Loading';
 import { default as S } from './styles.module.css';
 import { HomeWorld } from '../HomeWorld/HomeWorld';
 import { People } from '../../../../types/people';
-import { fetcher } from '../../../../API/fetcher';
+import { fetcher } from '../../../../api/fetcher';
 
 interface CharacterProps {
   character: People;

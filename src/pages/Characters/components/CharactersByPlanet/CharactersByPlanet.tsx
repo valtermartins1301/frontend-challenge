@@ -1,12 +1,12 @@
 // import useSWR from 'swr';
 import React from 'react';
-import { Typography } from '../../../../Components/Typography/Typography';
-import { Loading } from '../../../../Components/Loading/Loading';
+import { Typography } from '../../../../components/Typography/Typography';
+import { Loading } from '../../../../components/Loading/Loading';
 import { default as S } from './styles.module.css';
 import { LoadCharacter } from '../Character/Character';
 import useSWR from 'swr';
 import { Planet } from '../../../../types/planet';
-import { fetcher } from '../../../../API/fetcher';
+import { fetcher } from '../../../../api/fetcher';
 
 export const CharactersByPlanet = ({ planet }: { planet: string }) => {
   const { data: planetApiResponse, isLoading } = useSWR(

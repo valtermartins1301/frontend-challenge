@@ -3,7 +3,7 @@ import './global.css';
 import ReactDOM from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import reportWebVitals from './reportWebVitals';
-import Characters from './Pages/Characters/Characters';
+import Characters from './pages/Characters/Characters';
 import { SWRConfig, Cache } from 'swr';
 import { initializeApp } from 'firebase/app';
 import { getAnalytics } from 'firebase/analytics';
